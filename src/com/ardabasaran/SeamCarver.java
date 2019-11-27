@@ -581,7 +581,7 @@ public class SeamCarver {
                     int coord = seam.getPixels()[i];
                     for(int j = current_height; j > coord; j--)
                         seam_image_array[i][j] = seam_image_array[i][j-1];
-                    seam_image_array[i][coord] = (0xff << 16);
+                    seam_image_array[i][coord] = (0xffffff);
 
                 }
                 current_height++;
@@ -594,7 +594,7 @@ public class SeamCarver {
                     int coord = seam.getPixels()[j];
                     for(int i = current_width; i > coord; i--)
                         seam_image_array[i][j] = seam_image_array[i-1][j];
-                    seam_image_array[coord][j] = (0xff << 16);
+                    seam_image_array[coord][j] = (0xffffff);
                 }
 
                 current_width++;
