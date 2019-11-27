@@ -1,4 +1,4 @@
-package com.foreignOwl;
+package com.ardabasaran;
 
 /**
  * This class implements Seam. A seam is a fixed size list of pixels that has a direction,
